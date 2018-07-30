@@ -16,6 +16,8 @@ public class Movie {
     }
 
     public Movie (String category) {
+    	
+    	//If category equals scary, it will print out Evil Dead and Chucky.
         if(category.equalsIgnoreCase("scary")) {
         	this.title = "Evil Dead, " + "Chucky, ";
         	this.category = "Scary";
@@ -42,12 +44,13 @@ public class Movie {
         
     }
     
+    
     public String getName() {
         return title;
     }
     
 
-
+    // Get category gets the category from the input in the main 
     public String getcategory() {
         return category;
     }
